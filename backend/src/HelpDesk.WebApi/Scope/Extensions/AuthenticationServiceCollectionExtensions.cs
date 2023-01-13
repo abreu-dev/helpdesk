@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+﻿using HelpDesk.Security.Application.Settings;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
@@ -8,7 +9,12 @@ namespace HelpDesk.WebApi.Scope.Extensions
     {
         public static void AddCustomAuthentication(this IServiceCollection services, IConfiguration configuration)
         {
-            var jwtSecret = "81c4b832-29e3-4209-8cee-b1cb74d6caaa";
+            var jwtSettingsSection = configuration.GetSection("JwtSettings");
+            services.Configure<JwtSettings>(jwtSettingsSection);
+            var jwtSettings = jwtSettingsSection.Get<JwtSettings>();
+
+            if (jwtSettings == null)
+                throw new InvalidOperationException("JwtSettings can't be null");
 
             services.AddAuthentication(x =>
             {
@@ -21,7 +27,7 @@ namespace HelpDesk.WebApi.Scope.Extensions
                 x.TokenValidationParameters = new TokenValidationParameters
                 {
                     ValidateIssuerSigningKey = true,
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(jwtSecret)),
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(jwtSettings.Secret)),
                     ValidateIssuer = false,
                     ValidateAudience = false
                 };

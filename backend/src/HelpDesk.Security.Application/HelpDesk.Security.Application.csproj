@@ -7,11 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="7.0.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.21.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\HelpDesk.Core.Domain\HelpDesk.Core.Domain.csproj" />
+    <ProjectReference Include="..\HelpDesk.Security.Domain\HelpDesk.Security.Domain.csproj" />
   </ItemGroup>
 
 </Project>

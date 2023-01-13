@@ -11,7 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\HelpDesk.Infra.Globalization\HelpDesk.Infra.Globalization.csproj" />
+    <ProjectReference Include="..\HelpDesk.Core.Infra.Data\HelpDesk.Core.Infra.Data.csproj" />
+    <ProjectReference Include="..\HelpDesk.Infra.DbEntities\HelpDesk.Infra.DbEntities.csproj" />
+    <ProjectReference Include="..\HelpDesk.Security.Domain\HelpDesk.Security.Domain.csproj" />
   </ItemGroup>
 
 </Project>

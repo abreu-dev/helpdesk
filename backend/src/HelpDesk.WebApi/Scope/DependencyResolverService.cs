@@ -14,6 +14,8 @@ namespace HelpDesk.WebApi.Scope
         private static void FromProjects(IServiceCollection services)
         {
             Infra.DbContext.DependencyResolverService.Register(services);
+            Core.Domain.DependencyResolverService.Register(services);
+            Security.Infra.CrossCutting.IoC.DependencyResolverService.Register(services);
         }
     }
 }
