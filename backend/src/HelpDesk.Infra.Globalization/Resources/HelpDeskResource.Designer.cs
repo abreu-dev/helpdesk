@@ -97,6 +97,15 @@ namespace HelpDesk.Infra.Globalization.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to User must be authenticated.
+        /// </summary>
+        public static string NotAuthenticated {
+            get {
+                return ResourceManager.GetString("NotAuthenticated", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Operation failed.
         /// </summary>
         public static string OperationFailed {

@@ -14,7 +14,9 @@ namespace HelpDesk.Security.Infra.Repository.Repositories
     {
         public UserRepository(IDataContext dataContext,
                               ISessionService sessionService)
-            : base(dataContext, sessionService) { }
+            : base(dataContext, sessionService) 
+        { 
+        }
 
         public bool AnyWithEmail(string email)
         {
@@ -38,12 +40,12 @@ namespace HelpDesk.Security.Infra.Repository.Repositories
         protected override UserDomain Convert(UserData dataEntity)
         {
             return new UserDomain(
-                       dataEntity.Id,
-                       dataEntity.Name,
-                       dataEntity.Email,
-                       dataEntity.Username,
-                       dataEntity.Password,
-                       dataEntity.Language.GetEnumDisplayDescription());
+                dataEntity.Id,
+                dataEntity.Name,
+                dataEntity.Email,
+                dataEntity.Username,
+                dataEntity.Password,
+                dataEntity.Language.GetEnumDisplayDescription());
         }
 
         protected override UserData Convert(UserDomain domainEntity)

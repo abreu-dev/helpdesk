@@ -9,42 +9,54 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{5AD45C12
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{9EF65B16-25AB-40DF-9C32-BE0F1483BE5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpDesk.Infra.Globalization", "src\HelpDesk.Infra.Globalization\HelpDesk.Infra.Globalization.csproj", "{188F68A4-CD8C-4352-A7D5-5B91FA565C3C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelpDesk.Infra.Globalization", "src\HelpDesk.Infra.Globalization\HelpDesk.Infra.Globalization.csproj", "{188F68A4-CD8C-4352-A7D5-5B91FA565C3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpDesk.Infra.DbMigrations", "src\HelpDesk.Infra.DbMigrations\HelpDesk.Infra.DbMigrations.csproj", "{1771320A-6104-494F-B30D-2150629C3C8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelpDesk.Infra.DbMigrations", "src\HelpDesk.Infra.DbMigrations\HelpDesk.Infra.DbMigrations.csproj", "{1771320A-6104-494F-B30D-2150629C3C8E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpDesk.Infra.DbEntities", "src\HelpDesk.Infra.DbEntities\HelpDesk.Infra.DbEntities.csproj", "{DE583332-B9E3-4E1C-8F41-7E4CCD319FE2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelpDesk.Infra.DbEntities", "src\HelpDesk.Infra.DbEntities\HelpDesk.Infra.DbEntities.csproj", "{DE583332-B9E3-4E1C-8F41-7E4CCD319FE2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpDesk.Infra.DbContext", "src\HelpDesk.Infra.DbContext\HelpDesk.Infra.DbContext.csproj", "{C348423A-BF9B-4AB8-9218-024DE630A6CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelpDesk.Infra.DbContext", "src\HelpDesk.Infra.DbContext\HelpDesk.Infra.DbContext.csproj", "{C348423A-BF9B-4AB8-9218-024DE630A6CE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{1D36F306-F60B-442F-AA3B-5BC2F333980C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpDesk.Core.Infra.Data", "src\HelpDesk.Core.Infra.Data\HelpDesk.Core.Infra.Data.csproj", "{2BAFE333-4B83-4B17-889F-5BE8C71A0585}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelpDesk.Core.Infra.Data", "src\HelpDesk.Core.Infra.Data\HelpDesk.Core.Infra.Data.csproj", "{2BAFE333-4B83-4B17-889F-5BE8C71A0585}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{A618A351-065E-4154-AA5D-D83410FC85BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpDesk.WebApi", "src\HelpDesk.WebApi\HelpDesk.WebApi.csproj", "{39773C88-5DB1-4B9F-AA52-C030BF4DB6F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelpDesk.WebApi", "src\HelpDesk.WebApi\HelpDesk.WebApi.csproj", "{39773C88-5DB1-4B9F-AA52-C030BF4DB6F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpDesk.Core.Domain", "src\HelpDesk.Core.Domain\HelpDesk.Core.Domain.csproj", "{C00F08FC-CB25-4DAE-A554-93B775A95DCB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelpDesk.Core.Domain", "src\HelpDesk.Core.Domain\HelpDesk.Core.Domain.csproj", "{C00F08FC-CB25-4DAE-A554-93B775A95DCB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{A119482F-ACDC-42A3-8B56-04DABFA5D22D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Security", "Security", "{4406CDC8-D0CE-4B27-A5EA-738F415729DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpDesk.Security.Domain", "src\HelpDesk.Security.Domain\HelpDesk.Security.Domain.csproj", "{49C7EC65-09DF-4B20-8934-5E452B1374EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelpDesk.Security.Domain", "src\HelpDesk.Security.Domain\HelpDesk.Security.Domain.csproj", "{49C7EC65-09DF-4B20-8934-5E452B1374EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpDesk.Security.Contracts", "src\HelpDesk.Security.Contracts\HelpDesk.Security.Contracts.csproj", "{37E0CD2A-9A86-4521-98D1-5941B04F153C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelpDesk.Security.Contracts", "src\HelpDesk.Security.Contracts\HelpDesk.Security.Contracts.csproj", "{37E0CD2A-9A86-4521-98D1-5941B04F153C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpDesk.Security.Infra.Repository", "src\HelpDesk.Security.Infra.Repository\HelpDesk.Security.Infra.Repository.csproj", "{0FF1DF10-CDA2-4A8E-AA7C-A1783546EC70}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelpDesk.Security.Infra.Repository", "src\HelpDesk.Security.Infra.Repository\HelpDesk.Security.Infra.Repository.csproj", "{0FF1DF10-CDA2-4A8E-AA7C-A1783546EC70}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpDesk.Security.Infra.CrossCutting.IoC", "src\HelpDesk.Security.Infra.CrossCutting.IoC\HelpDesk.Security.Infra.CrossCutting.IoC.csproj", "{8936D88C-5094-4E93-BA57-F9EB7C31BEC9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelpDesk.Security.Infra.CrossCutting.IoC", "src\HelpDesk.Security.Infra.CrossCutting.IoC\HelpDesk.Security.Infra.CrossCutting.IoC.csproj", "{8936D88C-5094-4E93-BA57-F9EB7C31BEC9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpDesk.Security.Application", "src\HelpDesk.Security.Application\HelpDesk.Security.Application.csproj", "{1DBAA62D-DFA7-4D7C-B7E5-7EE327AAB894}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelpDesk.Security.Application", "src\HelpDesk.Security.Application\HelpDesk.Security.Application.csproj", "{1DBAA62D-DFA7-4D7C-B7E5-7EE327AAB894}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BDCAE9CE-ABE2-4BA2-87F1-FB1E2D85931D}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ticket", "Ticket", "{29DE26B9-B63A-4318-A685-194C822E25BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpDesk.Ticket.Domain", "src\HelpDesk.Ticket.Domain\HelpDesk.Ticket.Domain.csproj", "{0C59BD77-81DC-4D0B-B664-8362429D94AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpDesk.Ticket.Contracts", "src\HelpDesk.Ticket.Contracts\HelpDesk.Ticket.Contracts.csproj", "{B2B0B541-F78B-435F-8DF6-913DA0CB4C2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpDesk.Ticket.Infra.Repository", "src\HelpDesk.Ticket.Infra.Repository\HelpDesk.Ticket.Infra.Repository.csproj", "{00CB9A6C-459D-4819-AB88-2C5E989B1D99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpDesk.Ticket.Infra.CrossCutting.IoC", "src\HelpDesk.Ticket.Infra.CrossCutting.IoC\HelpDesk.Ticket.Infra.CrossCutting.IoC.csproj", "{6AABFEA7-72E0-40D3-A298-214A929F5E2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpDesk.Ticket.Application", "src\HelpDesk.Ticket.Application\HelpDesk.Ticket.Application.csproj", "{E2C770C0-6C08-4687-8912-12D1A500C685}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -100,6 +112,26 @@ Global
 		{1DBAA62D-DFA7-4D7C-B7E5-7EE327AAB894}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1DBAA62D-DFA7-4D7C-B7E5-7EE327AAB894}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1DBAA62D-DFA7-4D7C-B7E5-7EE327AAB894}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C59BD77-81DC-4D0B-B664-8362429D94AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C59BD77-81DC-4D0B-B664-8362429D94AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C59BD77-81DC-4D0B-B664-8362429D94AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C59BD77-81DC-4D0B-B664-8362429D94AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2B0B541-F78B-435F-8DF6-913DA0CB4C2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2B0B541-F78B-435F-8DF6-913DA0CB4C2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2B0B541-F78B-435F-8DF6-913DA0CB4C2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2B0B541-F78B-435F-8DF6-913DA0CB4C2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00CB9A6C-459D-4819-AB88-2C5E989B1D99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00CB9A6C-459D-4819-AB88-2C5E989B1D99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00CB9A6C-459D-4819-AB88-2C5E989B1D99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00CB9A6C-459D-4819-AB88-2C5E989B1D99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AABFEA7-72E0-40D3-A298-214A929F5E2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AABFEA7-72E0-40D3-A298-214A929F5E2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AABFEA7-72E0-40D3-A298-214A929F5E2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AABFEA7-72E0-40D3-A298-214A929F5E2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2C770C0-6C08-4687-8912-12D1A500C685}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2C770C0-6C08-4687-8912-12D1A500C685}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2C770C0-6C08-4687-8912-12D1A500C685}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2C770C0-6C08-4687-8912-12D1A500C685}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -122,6 +154,12 @@ Global
 		{0FF1DF10-CDA2-4A8E-AA7C-A1783546EC70} = {4406CDC8-D0CE-4B27-A5EA-738F415729DD}
 		{8936D88C-5094-4E93-BA57-F9EB7C31BEC9} = {4406CDC8-D0CE-4B27-A5EA-738F415729DD}
 		{1DBAA62D-DFA7-4D7C-B7E5-7EE327AAB894} = {4406CDC8-D0CE-4B27-A5EA-738F415729DD}
+		{29DE26B9-B63A-4318-A685-194C822E25BB} = {A119482F-ACDC-42A3-8B56-04DABFA5D22D}
+		{0C59BD77-81DC-4D0B-B664-8362429D94AA} = {29DE26B9-B63A-4318-A685-194C822E25BB}
+		{B2B0B541-F78B-435F-8DF6-913DA0CB4C2C} = {29DE26B9-B63A-4318-A685-194C822E25BB}
+		{00CB9A6C-459D-4819-AB88-2C5E989B1D99} = {29DE26B9-B63A-4318-A685-194C822E25BB}
+		{6AABFEA7-72E0-40D3-A298-214A929F5E2E} = {29DE26B9-B63A-4318-A685-194C822E25BB}
+		{E2C770C0-6C08-4687-8912-12D1A500C685} = {29DE26B9-B63A-4318-A685-194C822E25BB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0CA4278E-59FB-4587-81BA-43A87C9A0E75}

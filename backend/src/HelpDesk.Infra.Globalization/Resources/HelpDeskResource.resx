@@ -129,6 +129,9 @@
   <data name="InvalidPropertyOptionTemplate" xml:space="preserve">
     <value>{PropertyName} has a range of values which does not include '{PropertyValue}'</value>
   </data>
+  <data name="NotAuthenticated" xml:space="preserve">
+    <value>User must be authenticated</value>
+  </data>
   <data name="OperationFailed" xml:space="preserve">
     <value>Operation failed</value>
   </data>

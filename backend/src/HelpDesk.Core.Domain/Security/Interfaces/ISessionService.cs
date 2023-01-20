@@ -3,6 +3,7 @@
     public interface ISessionService
     {
         IAuthenticatedUser? User { get; }
+        Guid UserId { get; }
 
         bool IsAuthenticated();
 
