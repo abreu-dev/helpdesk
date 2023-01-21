@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="FluentValidation" Version="11.4.0" />
+    <ProjectReference Include="..\HelpDesk.Core.Domain\HelpDesk.Core.Domain.csproj" />
   </ItemGroup>
 
 </Project>

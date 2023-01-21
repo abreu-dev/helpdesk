@@ -1,6 +1,6 @@
 ﻿namespace HelpDesk.Core.Domain.Exceptions
 {
-    public abstract class DetailedException : Exception
+    public class DetailedException : Exception
     {
         public string Type { get; set; }
         public string Error { get; set; }
