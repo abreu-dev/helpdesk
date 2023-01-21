@@ -48,15 +48,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ticket", "Ticket", "{29DE26B9-B63A-4318-A685-194C822E25BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpDesk.Ticket.Domain", "src\HelpDesk.Ticket.Domain\HelpDesk.Ticket.Domain.csproj", "{0C59BD77-81DC-4D0B-B664-8362429D94AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelpDesk.Ticket.Domain", "src\HelpDesk.Ticket.Domain\HelpDesk.Ticket.Domain.csproj", "{0C59BD77-81DC-4D0B-B664-8362429D94AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpDesk.Ticket.Contracts", "src\HelpDesk.Ticket.Contracts\HelpDesk.Ticket.Contracts.csproj", "{B2B0B541-F78B-435F-8DF6-913DA0CB4C2C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelpDesk.Ticket.Contracts", "src\HelpDesk.Ticket.Contracts\HelpDesk.Ticket.Contracts.csproj", "{B2B0B541-F78B-435F-8DF6-913DA0CB4C2C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpDesk.Ticket.Infra.Repository", "src\HelpDesk.Ticket.Infra.Repository\HelpDesk.Ticket.Infra.Repository.csproj", "{00CB9A6C-459D-4819-AB88-2C5E989B1D99}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelpDesk.Ticket.Infra.Repository", "src\HelpDesk.Ticket.Infra.Repository\HelpDesk.Ticket.Infra.Repository.csproj", "{00CB9A6C-459D-4819-AB88-2C5E989B1D99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpDesk.Ticket.Infra.CrossCutting.IoC", "src\HelpDesk.Ticket.Infra.CrossCutting.IoC\HelpDesk.Ticket.Infra.CrossCutting.IoC.csproj", "{6AABFEA7-72E0-40D3-A298-214A929F5E2E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelpDesk.Ticket.Infra.CrossCutting.IoC", "src\HelpDesk.Ticket.Infra.CrossCutting.IoC\HelpDesk.Ticket.Infra.CrossCutting.IoC.csproj", "{6AABFEA7-72E0-40D3-A298-214A929F5E2E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpDesk.Ticket.Application", "src\HelpDesk.Ticket.Application\HelpDesk.Ticket.Application.csproj", "{E2C770C0-6C08-4687-8912-12D1A500C685}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelpDesk.Ticket.Application", "src\HelpDesk.Ticket.Application\HelpDesk.Ticket.Application.csproj", "{E2C770C0-6C08-4687-8912-12D1A500C685}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpDesk.Domain", "src\HelpDesk.Domain\HelpDesk.Domain.csproj", "{4C33B05B-935C-4D13-89D0-EE7FFD6D9E36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpDesk.Enums", "src\HelpDesk.Enums\HelpDesk.Enums.csproj", "{E70AB3EE-1DA4-4F48-88E5-75CEE84EB2F8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{DE3F61FF-0E75-4415-A60C-6684B85A1FF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpDesk.Domain.Test", "tests\HelpDesk.Domain.Test\HelpDesk.Domain.Test.csproj", "{8D342A7D-5D3D-47F6-8F49-E5A002B69D4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpDesk.TestHelpers", "tests\HelpDesk.TestHelpers\HelpDesk.TestHelpers.csproj", "{82431EBD-BFDC-4989-964E-D75B0283E5F9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -132,6 +142,22 @@ Global
 		{E2C770C0-6C08-4687-8912-12D1A500C685}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2C770C0-6C08-4687-8912-12D1A500C685}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2C770C0-6C08-4687-8912-12D1A500C685}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C33B05B-935C-4D13-89D0-EE7FFD6D9E36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C33B05B-935C-4D13-89D0-EE7FFD6D9E36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C33B05B-935C-4D13-89D0-EE7FFD6D9E36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C33B05B-935C-4D13-89D0-EE7FFD6D9E36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E70AB3EE-1DA4-4F48-88E5-75CEE84EB2F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E70AB3EE-1DA4-4F48-88E5-75CEE84EB2F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E70AB3EE-1DA4-4F48-88E5-75CEE84EB2F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E70AB3EE-1DA4-4F48-88E5-75CEE84EB2F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D342A7D-5D3D-47F6-8F49-E5A002B69D4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D342A7D-5D3D-47F6-8F49-E5A002B69D4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D342A7D-5D3D-47F6-8F49-E5A002B69D4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D342A7D-5D3D-47F6-8F49-E5A002B69D4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82431EBD-BFDC-4989-964E-D75B0283E5F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82431EBD-BFDC-4989-964E-D75B0283E5F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82431EBD-BFDC-4989-964E-D75B0283E5F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82431EBD-BFDC-4989-964E-D75B0283E5F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -160,6 +186,11 @@ Global
 		{00CB9A6C-459D-4819-AB88-2C5E989B1D99} = {29DE26B9-B63A-4318-A685-194C822E25BB}
 		{6AABFEA7-72E0-40D3-A298-214A929F5E2E} = {29DE26B9-B63A-4318-A685-194C822E25BB}
 		{E2C770C0-6C08-4687-8912-12D1A500C685} = {29DE26B9-B63A-4318-A685-194C822E25BB}
+		{4C33B05B-935C-4D13-89D0-EE7FFD6D9E36} = {A119482F-ACDC-42A3-8B56-04DABFA5D22D}
+		{E70AB3EE-1DA4-4F48-88E5-75CEE84EB2F8} = {A119482F-ACDC-42A3-8B56-04DABFA5D22D}
+		{DE3F61FF-0E75-4415-A60C-6684B85A1FF5} = {5AD45C12-09D5-40B6-8F40-A9F62115CEF5}
+		{8D342A7D-5D3D-47F6-8F49-E5A002B69D4E} = {DE3F61FF-0E75-4415-A60C-6684B85A1FF5}
+		{82431EBD-BFDC-4989-964E-D75B0283E5F9} = {5AD45C12-09D5-40B6-8F40-A9F62115CEF5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0CA4278E-59FB-4587-81BA-43A87C9A0E75}
