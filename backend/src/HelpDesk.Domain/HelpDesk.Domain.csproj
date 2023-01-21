@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\HelpDesk.Core.Domain\HelpDesk.Core.Domain.csproj" />
+    <ProjectReference Include="..\HelpDesk.Infra.Globalization\HelpDesk.Infra.Globalization.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,7 +1,6 @@
-﻿using Bogus;
-using FluentAssertions;
-using FluentValidation;
+﻿using FluentValidation;
 using HelpDesk.Core.Domain.Exceptions;
+using HelpDesk.Core.Domain.Extensions;
 using HelpDesk.Core.Domain.Validations;
 
 namespace HelpDesk.Core.Domain.Test.Validations
@@ -35,7 +34,7 @@ namespace HelpDesk.Core.Domain.Test.Validations
 
             // Assert
             exception.Should().NotBeNull();
-            exception.Message.Should().Be(string.Format("Prop {0} already went through validation.", propName));
+            exception.Message.Should().Be("Prop {PropName} already went through validation.".Format(new { PropName = propName }));
         }
 
         [Fact]
@@ -83,7 +82,34 @@ namespace HelpDesk.Core.Domain.Test.Validations
 
             detailedException.Type.Should().Be(expectedResult.Errors.First().ErrorCode);
             detailedException.Error.Should().Be(expectedResult.Errors.First().ErrorMessage);
-            detailedException.Detail.Should().Be(expectedResult.Errors.First().Severity.ToString());
+            detailedException.Detail.Should().Be(expectedResult.Errors.First().ErrorMessage);
+        }
+
+        [Fact]
+        public void PassThroughValidation_WhenFailValidationWithCustomState_ShouldThrowException()
+        {
+            // Arrange
+            var validatableEntity = new ConcreteValidatableEntity();
+
+            var propName = new Faker().Random.Word();
+            var propValue = new object();
+            var propValidator = new ConcreteFailWithCustomStateAbstractValidator();
+
+            var expectedResult = propValidator.Validate(propValue);
+
+            // Act
+            var exception = Record.Exception(() => validatableEntity.PassThroughValidation(propName, propValue, propValidator));
+
+            // Assert
+            exception.Should().NotBeNull();
+            exception.Should().BeOfType<DetailedException>();
+
+            var detailedException = exception as DetailedException;
+            if (detailedException == null) throw new ArgumentException(nameof(detailedException));
+
+            detailedException.Type.Should().Be("Type");
+            detailedException.Error.Should().Be("Error");
+            detailedException.Detail.Should().Be("Detail");
         }
 
         internal class ConcreteValidatableEntity : ValidatableEntity
@@ -105,6 +131,16 @@ namespace HelpDesk.Core.Domain.Test.Validations
             {
                 RuleFor(x => x)
                     .Must(y => false);
+            }
+        }
+
+        internal class ConcreteFailWithCustomStateAbstractValidator : AbstractValidator<object>
+        {
+            public ConcreteFailWithCustomStateAbstractValidator()
+            {
+                RuleFor(x => x)
+                    .Must(y => false)
+                    .WithState(x => new CustomValidationState("Type", "Error", "Detail"));
             }
         }
     }

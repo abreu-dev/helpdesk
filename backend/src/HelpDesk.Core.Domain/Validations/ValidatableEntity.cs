@@ -1,6 +1,7 @@
 ﻿using FluentValidation;
 using HelpDesk.Core.Domain.Entities;
 using HelpDesk.Core.Domain.Exceptions;
+using HelpDesk.Core.Domain.Extensions;
 
 namespace HelpDesk.Core.Domain.Validations
 {
@@ -17,7 +18,7 @@ namespace HelpDesk.Core.Domain.Validations
         public TPropType PassThroughValidation<TPropType>(string propName, TPropType propValue, AbstractValidator<TPropType> propValidator)
         {
             if (ValidationResults.Any(x => x.PropName == propName))
-                throw new Exception(string.Format("Prop {0} already went through validation.", propName));
+                throw new Exception("Prop {PropName} already went through validation.".Format(new { PropName = propName }));
 
             var result = propValidator.Validate(propValue);
             _validationResults.Add(new CustomValidationResult(propName, propValidator.GetType().Name, result));
@@ -25,7 +26,12 @@ namespace HelpDesk.Core.Domain.Validations
             if (result.Errors.Any())
             {
                 var firstError = result.Errors.First();
-                throw new DetailedException(firstError.ErrorCode, firstError.ErrorMessage, firstError.Severity.ToString());
+                var firstErrorCustomState = firstError.CustomState as CustomValidationState;
+
+                if (firstErrorCustomState != null)
+                    throw new DetailedException(firstErrorCustomState.Type, firstErrorCustomState.Error, firstErrorCustomState.Detail);
+
+                throw new DetailedException(firstError.ErrorCode, firstError.ErrorMessage, firstError.ErrorMessage);
             }
 
             return propValue;

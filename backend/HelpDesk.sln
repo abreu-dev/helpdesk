@@ -16,19 +16,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{230737C0-5
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{7A7C1C26-B14C-455D-92B7-50E51EC61FFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpDesk.Core.Domain", "src\HelpDesk.Core.Domain\HelpDesk.Core.Domain.csproj", "{B282FA38-4CBA-4410-978A-40F5F3DAE732}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelpDesk.Core.Domain", "src\HelpDesk.Core.Domain\HelpDesk.Core.Domain.csproj", "{B282FA38-4CBA-4410-978A-40F5F3DAE732}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelpDesk.Domain", "src\HelpDesk.Domain\HelpDesk.Domain.csproj", "{F97A2950-8AD5-466B-B67F-51B758A00904}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelpDesk.Enums", "src\HelpDesk.Enums\HelpDesk.Enums.csproj", "{3EFA41FE-7254-4285-B8E0-80A822670E45}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpDesk.Domain.Test", "tests\HelpDesk.Domain.Test\HelpDesk.Domain.Test.csproj", "{91B1A0A2-C2AF-410C-976C-EE07AE002FBE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelpDesk.Domain.Test", "tests\HelpDesk.Domain.Test\HelpDesk.Domain.Test.csproj", "{91B1A0A2-C2AF-410C-976C-EE07AE002FBE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpDesk.Core.Domain.Test", "tests\HelpDesk.Core.Domain.Test\HelpDesk.Core.Domain.Test.csproj", "{6B446907-993E-4001-B518-2A82E987EA3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelpDesk.Core.Domain.Test", "tests\HelpDesk.Core.Domain.Test\HelpDesk.Core.Domain.Test.csproj", "{6B446907-993E-4001-B518-2A82E987EA3D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{CC2968CC-F1EB-416A-BA6F-7427EA94CAF4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{2E1FA29E-7A52-46FD-AD6C-0476A188BC3D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{C09C998D-BA4C-4171-9722-BFBF6D9648A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpDesk.Infra.Globalization", "src\HelpDesk.Infra.Globalization\HelpDesk.Infra.Globalization.csproj", "{265C58AD-0997-476C-8806-DCE8B318AF15}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -56,6 +60,10 @@ Global
 		{6B446907-993E-4001-B518-2A82E987EA3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B446907-993E-4001-B518-2A82E987EA3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B446907-993E-4001-B518-2A82E987EA3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{265C58AD-0997-476C-8806-DCE8B318AF15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{265C58AD-0997-476C-8806-DCE8B318AF15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{265C58AD-0997-476C-8806-DCE8B318AF15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{265C58AD-0997-476C-8806-DCE8B318AF15}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -70,6 +78,8 @@ Global
 		{6B446907-993E-4001-B518-2A82E987EA3D} = {CC2968CC-F1EB-416A-BA6F-7427EA94CAF4}
 		{CC2968CC-F1EB-416A-BA6F-7427EA94CAF4} = {5AD45C12-09D5-40B6-8F40-A9F62115CEF5}
 		{2E1FA29E-7A52-46FD-AD6C-0476A188BC3D} = {5AD45C12-09D5-40B6-8F40-A9F62115CEF5}
+		{C09C998D-BA4C-4171-9722-BFBF6D9648A1} = {DB60CEE9-8075-4FE5-8FC0-78BECB64ABD0}
+		{265C58AD-0997-476C-8806-DCE8B318AF15} = {C09C998D-BA4C-4171-9722-BFBF6D9648A1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0CA4278E-59FB-4587-81BA-43A87C9A0E75}

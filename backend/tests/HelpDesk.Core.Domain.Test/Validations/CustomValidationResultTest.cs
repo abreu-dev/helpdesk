@@ -1,6 +1,4 @@
-﻿using Bogus;
-using FluentAssertions;
-using HelpDesk.Core.Domain.Validations;
+﻿using HelpDesk.Core.Domain.Validations;
 
 namespace HelpDesk.Core.Domain.Test.Validations
 {

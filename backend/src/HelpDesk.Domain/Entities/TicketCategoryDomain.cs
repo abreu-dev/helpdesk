@@ -1,5 +1,7 @@
 ﻿using FluentValidation;
+using HelpDesk.Core.Domain.Extensions;
 using HelpDesk.Core.Domain.Validations;
+using HelpDesk.Infra.Globalization.Resources;
 
 namespace HelpDesk.Domain.Entities
 {
@@ -41,7 +43,12 @@ namespace HelpDesk.Domain.Entities
             {
                 RuleFor(prop => prop)
                     .NotEmpty()
-                    .WithName(nameof(Description));
+                    .WithName(HelpDeskResource.Description)
+                    .WithState(x => new CustomValidationState(
+                        nameof(HelpDeskResource.PropertyNullOrEmpty),
+                        HelpDeskResource.PropertyNullOrEmpty,
+                        HelpDeskResource.PropertyNullOrEmptyTemplate.Format(new { PropertyName = HelpDeskResource.Description }))
+                    );
             }
         }
     }

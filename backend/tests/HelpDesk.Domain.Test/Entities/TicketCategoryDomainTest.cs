@@ -1,5 +1,8 @@
-﻿using FluentValidation.TestHelper;
+﻿using HelpDesk.Core.Domain.Extensions;
+using HelpDesk.Core.Domain.Validations;
+using HelpDesk.Core.Domain.Validations.TestHelper;
 using HelpDesk.Domain.Entities;
+using HelpDesk.Infra.Globalization.Resources;
 
 namespace HelpDesk.Domain.Test.Entities
 {
@@ -67,12 +70,19 @@ namespace HelpDesk.Domain.Test.Entities
             var description = new Faker().Random.String(0);
             var validator = new TicketCategoryDomain.DescriptionValidator();
 
+            var expectedCustomState = new CustomValidationState(
+                nameof(HelpDeskResource.PropertyNullOrEmpty),
+                HelpDeskResource.PropertyNullOrEmpty,
+                HelpDeskResource.PropertyNullOrEmptyTemplate.Format(new { PropertyName = HelpDeskResource.Description })
+            );
+
             // Act
             var result = validator.TestValidate(description);
 
             // Assert
             result.ShouldHaveValidationErrorFor(nameof(TicketCategoryDomain.Description))
                 .WithErrorCode("NotEmptyValidator")
+                .WithCustomState(expectedCustomState, new CustomValidationStateComparer())
                 .Only();
         }
     }
