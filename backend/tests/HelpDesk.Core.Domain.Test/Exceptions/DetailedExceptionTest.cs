@@ -19,6 +19,7 @@ namespace HelpDesk.Core.Domain.Test.Exceptions
             detailedException.Type.Should().Be(type);
             detailedException.Error.Should().Be(error);
             detailedException.Detail.Should().Be(detail);
+            detailedException.Message.Should().Be($"{type} | {error} | {detail}");
         }
     }
 }

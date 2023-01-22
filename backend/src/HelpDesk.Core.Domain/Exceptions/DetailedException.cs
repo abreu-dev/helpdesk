@@ -13,6 +13,6 @@
             Detail = detail;
         }
 
-        public static string GetMessage(string type, string error, string detail) => $"{type} | {error} | {detail}";
+        private static string GetMessage(string type, string error, string detail) => $"{type} | {error} | {detail}";
     }
 }

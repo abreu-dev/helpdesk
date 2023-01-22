@@ -131,5 +131,28 @@ namespace HelpDesk.Core.Domain.Test.Validations.TestHelper
             // Assert
             result.Should().BeFalse();
         }
+
+        [Fact]
+        public void GetHashCode_WhenObjectDontMatchType_ShouldReturnDefaultHashCode()
+        {
+            // Arrange
+            var otherObject = new object();
+
+            // Act
+            var result = new CustomValidationStateComparer().GetHashCode(otherObject);
+
+            // Assert
+            result.Should().Be(otherObject.GetHashCode());
+        }
+
+        [Fact]
+        public void GetHashCode_WhenObjectMatchType_ShouldReturnCustomHashCode()
+        {
+            // Act
+            var result = new CustomValidationStateComparer().GetHashCode(FirstCustomValidationState);
+
+            // Assert
+            result.Should().Be(HashCode.Combine(FirstCustomValidationState.Type, FirstCustomValidationState.Error, FirstCustomValidationState.Detail));
+        }
     }
 }
