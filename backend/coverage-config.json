@@ -1,0 +1,7 @@
+{
+  "coverage-config": {
+    "reports": "tests\\*.Test\\TestResults\\*\\coverage.cobertura.xml",
+    "targetdir": "tests/reports/coverage",
+    "reporttypes": "Html"
+  }
+}

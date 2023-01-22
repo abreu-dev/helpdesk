@@ -1,0 +1,11 @@
+{
+  "stryker-config": {
+    "solution": "HelpDesk.sln",
+    "reporters": [
+      "progress",
+      "html"
+    ],
+    "concurrency": 1,
+    "coverage-analysis": "off"
+  }
+}

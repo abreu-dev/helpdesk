@@ -8,6 +8,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BDCAE9CE-ABE2-4BA2-87F1-FB1E2D85931D}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		coverage-config.json = coverage-config.json
+		stryker-config.json = stryker-config.json
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{DB60CEE9-8075-4FE5-8FC0-78BECB64ABD0}"
