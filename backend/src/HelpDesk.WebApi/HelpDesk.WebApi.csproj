@@ -19,6 +19,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\HelpDesk.Infra.DbMigrations\HelpDesk.Infra.DbMigrations.csproj" />
+    <ProjectReference Include="..\HelpDesk.Security.Application\HelpDesk.Security.Application.csproj" />
+    <ProjectReference Include="..\HelpDesk.Security.Infra.CrossCutting.IoC\HelpDesk.Security.Infra.CrossCutting.IoC.csproj" />
   </ItemGroup>
 
 </Project>

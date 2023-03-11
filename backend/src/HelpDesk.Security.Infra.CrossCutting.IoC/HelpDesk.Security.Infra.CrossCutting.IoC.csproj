@@ -7,11 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.3" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\HelpDesk.Domain.Core\HelpDesk.Domain.Core.csproj" />
+    <ProjectReference Include="..\HelpDesk.Security.Application\HelpDesk.Security.Application.csproj" />
+    <ProjectReference Include="..\HelpDesk.Security.Infra.Repository\HelpDesk.Security.Infra.Repository.csproj" />
   </ItemGroup>
 
 </Project>
