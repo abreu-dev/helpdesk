@@ -22,6 +22,7 @@ namespace HelpDesk.Security.Application
         public static void AppQueries(IServiceCollection services)
         {
             services.AddScoped<IUnitAppQuery, UnitAppQuery>();
+            services.AddScoped<ICategoryAppQuery, CategoryAppQuery>();
         }
     }
 }

@@ -23,19 +23,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{5C50DBDF-AE6
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{80CDF29E-132C-4743-BD4A-C4EC6785B2DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpDesk.Domain.Core", "src\HelpDesk.Domain.Core\HelpDesk.Domain.Core.csproj", "{8DB3206F-5385-4C46-BCF8-6BF0B324B705}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelpDesk.Domain.Core", "src\HelpDesk.Domain.Core\HelpDesk.Domain.Core.csproj", "{8DB3206F-5385-4C46-BCF8-6BF0B324B705}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{CC422658-975F-4834-861B-F08E21A41433}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpDesk.Security.Domain", "src\HelpDesk.Security.Domain\HelpDesk.Security.Domain.csproj", "{57DDD540-5EA2-4BD1-A560-505D00580F1C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelpDesk.Security.Domain", "src\HelpDesk.Security.Domain\HelpDesk.Security.Domain.csproj", "{57DDD540-5EA2-4BD1-A560-505D00580F1C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpDesk.Security.Infra.Repository", "src\HelpDesk.Security.Infra.Repository\HelpDesk.Security.Infra.Repository.csproj", "{B7BEAC43-1B3F-4900-8591-8566BB95191F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelpDesk.Security.Infra.Repository", "src\HelpDesk.Security.Infra.Repository\HelpDesk.Security.Infra.Repository.csproj", "{B7BEAC43-1B3F-4900-8591-8566BB95191F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpDesk.Security.Infra.CrossCutting.IoC", "src\HelpDesk.Security.Infra.CrossCutting.IoC\HelpDesk.Security.Infra.CrossCutting.IoC.csproj", "{5698C7D1-1236-478C-A87E-C5400081E5A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelpDesk.Security.Infra.CrossCutting.IoC", "src\HelpDesk.Security.Infra.CrossCutting.IoC\HelpDesk.Security.Infra.CrossCutting.IoC.csproj", "{5698C7D1-1236-478C-A87E-C5400081E5A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpDesk.Security.Application", "src\HelpDesk.Security.Application\HelpDesk.Security.Application.csproj", "{D7538961-C8BE-4360-8964-5193B9A8BFD3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelpDesk.Security.Application", "src\HelpDesk.Security.Application\HelpDesk.Security.Application.csproj", "{D7538961-C8BE-4360-8964-5193B9A8BFD3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpDesk.Security.Contracts", "src\HelpDesk.Security.Contracts\HelpDesk.Security.Contracts.csproj", "{876C90FC-939C-4B78-A376-0AC3E440E854}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelpDesk.Security.Contracts", "src\HelpDesk.Security.Contracts\HelpDesk.Security.Contracts.csproj", "{876C90FC-939C-4B78-A376-0AC3E440E854}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

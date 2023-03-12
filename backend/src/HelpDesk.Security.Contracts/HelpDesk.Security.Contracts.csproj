@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\HelpDesk.Domain.Core\HelpDesk.Domain.Core.csproj" />
+  </ItemGroup>
+
 </Project>

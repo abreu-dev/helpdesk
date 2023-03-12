@@ -22,6 +22,7 @@ namespace HelpDesk.Security.Infra.Repository
         public static void Queries(IServiceCollection services)
         {
             services.AddScoped<IUnitQuery, UnitQuery>();
+            services.AddScoped<ICategoryQuery, CategoryQuery>();
         }
     }
 }
