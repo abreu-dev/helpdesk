@@ -43,7 +43,7 @@ namespace HelpDesk.Infra.Core.Repositories
         {
             var dataEntity = ToData(domainEntity);
             dataEntity.OnCreate();
-            
+
             _context.AddData(dataEntity);
         }
 

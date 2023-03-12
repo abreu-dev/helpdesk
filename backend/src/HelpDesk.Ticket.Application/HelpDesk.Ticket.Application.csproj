@@ -11,8 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\HelpDesk.Security.Contracts\HelpDesk.Security.Contracts.csproj" />
-    <ProjectReference Include="..\HelpDesk.Security.Domain\HelpDesk.Security.Domain.csproj" />
+    <ProjectReference Include="..\HelpDesk.Ticket.Domain\HelpDesk.Ticket.Domain.csproj" />
   </ItemGroup>
 
 </Project>

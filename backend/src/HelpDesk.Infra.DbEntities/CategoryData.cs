@@ -8,7 +8,7 @@ namespace HelpDesk.Infra.DbEntities
         public static string TABLE_SCHEMA => "dbo";
 
         public string Name { get; set; }
-        
+
         public Guid? ParentCategoryId { get; set; }
         public virtual CategoryData? ParentCategory { get; set; }
     }

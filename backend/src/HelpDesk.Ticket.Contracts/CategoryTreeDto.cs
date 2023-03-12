@@ -1,6 +1,6 @@
 ﻿using HelpDesk.Domain.Core.TreeMaker;
 
-namespace HelpDesk.Security.Contracts
+namespace HelpDesk.Ticket.Contracts
 {
     public class CategoryTreeDto : TreeValue
     {

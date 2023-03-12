@@ -12,7 +12,7 @@ namespace HelpDesk.WebApi.Controllers
         private readonly IUnitAppService _unitAppService;
         private readonly IUnitAppQuery _unitAppQuery;
 
-        public UnitsController(IUnitAppService unitAppService, 
+        public UnitsController(IUnitAppService unitAppService,
                                IUnitAppQuery unitAppQuery)
         {
             _unitAppService = unitAppService;

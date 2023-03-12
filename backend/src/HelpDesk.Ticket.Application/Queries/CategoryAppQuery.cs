@@ -1,9 +1,9 @@
 ﻿using HelpDesk.Domain.Core.TreeMaker;
-using HelpDesk.Security.Application.Queries.Interfaces;
-using HelpDesk.Security.Contracts;
-using HelpDesk.Security.Domain.Queries;
+using HelpDesk.Ticket.Application.Queries.Interfaces;
+using HelpDesk.Ticket.Contracts;
+using HelpDesk.Ticket.Domain.Queries;
 
-namespace HelpDesk.Security.Application.Queries
+namespace HelpDesk.Ticket.Application.Queries
 {
     public class CategoryAppQuery : ICategoryAppQuery
     {

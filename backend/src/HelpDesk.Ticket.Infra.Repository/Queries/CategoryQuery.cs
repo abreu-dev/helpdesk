@@ -1,10 +1,10 @@
 ﻿using HelpDesk.Domain.Core.TreeMaker;
 using HelpDesk.Infra.Core.Context;
 using HelpDesk.Infra.DbEntities;
-using HelpDesk.Security.Contracts;
-using HelpDesk.Security.Domain.Queries;
+using HelpDesk.Ticket.Contracts;
+using HelpDesk.Ticket.Domain.Queries;
 
-namespace HelpDesk.Security.Infra.Repository.Queries
+namespace HelpDesk.Ticket.Infra.Repository.Queries
 {
     public class CategoryQuery : ICategoryQuery
     {

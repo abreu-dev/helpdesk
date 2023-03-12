@@ -1,7 +1,7 @@
 ﻿using HelpDesk.Domain.Core.TreeMaker;
-using HelpDesk.Security.Contracts;
+using HelpDesk.Ticket.Contracts;
 
-namespace HelpDesk.Security.Application.Queries.Interfaces
+namespace HelpDesk.Ticket.Application.Queries.Interfaces
 {
     public interface ICategoryAppQuery
     {

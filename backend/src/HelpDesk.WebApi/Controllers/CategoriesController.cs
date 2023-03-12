@@ -1,4 +1,4 @@
-﻿using HelpDesk.Security.Application.Queries.Interfaces;
+﻿using HelpDesk.Ticket.Application.Queries.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HelpDesk.WebApi.Controllers

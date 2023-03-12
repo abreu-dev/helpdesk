@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HelpDesk.Ticket.Application\HelpDesk.Ticket.Application.csproj" />
+    <ProjectReference Include="..\HelpDesk.Ticket.Infra.Repository\HelpDesk.Ticket.Infra.Repository.csproj" />
+  </ItemGroup>
+
+</Project>

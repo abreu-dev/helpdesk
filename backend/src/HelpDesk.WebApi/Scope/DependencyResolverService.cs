@@ -15,6 +15,7 @@ namespace HelpDesk.WebApi.Scope
         {
             Infra.DbContext.DependencyResolverService.Register(services);
             Security.Infra.CrossCutting.IoC.DependencyResolverService.Register(services);
+            Ticket.Infra.CrossCutting.IoC.DependencyResolverService.Register(services);
         }
     }
 }

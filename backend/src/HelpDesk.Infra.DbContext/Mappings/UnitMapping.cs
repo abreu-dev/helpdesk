@@ -11,7 +11,7 @@ namespace HelpDesk.Infra.DbContext.Mappings
             builder.ToTable(UnitData.TABLE_NAME, UnitData.TABLE_SCHEMA);
 
             builder.HasKey(x => x.Id);
-            
+
             builder.Property(x => x.Name)
                 .IsRequired();
 
