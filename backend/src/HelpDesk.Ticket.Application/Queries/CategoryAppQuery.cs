@@ -14,9 +14,14 @@ namespace HelpDesk.Ticket.Application.Queries
             _categoryQuery = categoryQuery;
         }
 
-        public TreeView<CategoryTreeDto> GetTree()
+        public CategoryDto GetById(Guid categoryId)
         {
-            return _categoryQuery.GetTree();
+            return _categoryQuery.GetById(categoryId);
+        }
+
+        public TreeView<CategoryTreeDto> GetTreeView()
+        {
+            return _categoryQuery.GetTreeView();
         }
     }
 }

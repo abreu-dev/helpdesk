@@ -15,7 +15,22 @@ namespace HelpDesk.Ticket.Infra.Repository.Queries
             _context = context;
         }
 
-        public TreeView<CategoryTreeDto> GetTree()
+        public CategoryDto GetById(Guid categoryId)
+        {
+            var categoryData = _context.Query<CategoryData>().SingleOrDefault(x => x.Id == categoryId);
+
+            if (categoryData == null)
+                throw new NullReferenceException("Category");
+
+            return new CategoryDto
+            {
+                Id = categoryData.Id,
+                Name = categoryData.Name,
+                ParentCategoryId = categoryData.ParentCategoryId
+            };
+        }
+
+        public TreeView<CategoryTreeDto> GetTreeView()
         {
             var values = _context.Query<CategoryData>()
                 .Select(x => new CategoryTreeDto(x.Id, x.ParentCategoryId, x.Name))

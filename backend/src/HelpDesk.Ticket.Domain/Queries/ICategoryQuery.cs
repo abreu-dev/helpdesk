@@ -5,6 +5,7 @@ namespace HelpDesk.Ticket.Domain.Queries
 {
     public interface ICategoryQuery
     {
-        TreeView<CategoryTreeDto> GetTree();
+        CategoryDto GetById(Guid categoryId);
+        TreeView<CategoryTreeDto> GetTreeView();
     }
 }

@@ -26,7 +26,6 @@ namespace HelpDesk.WebApi.Controllers
             return Ok(unitDto);
         }
 
-
         [HttpPost]
         public IActionResult Create([FromBody] UnitForCreationDto unitForCreationDto)
         {
